@@ -1,0 +1,26 @@
+# Study-level metadata for the VGS SDTM Delivery Accelerator (demo)
+study:
+  studyid: VGS-DEMO-101
+  sponsor: VGS (demo)
+  sdtm_version: "SDTMIG 3.4"
+  ct_version: "CDISC CT 2024-12-13 (subset)"
+  domains: [DM, AE, VS, LB, CM]
+
+# Governance thresholds from the strategy proposal (page 9 success metrics).
+# The pipeline enforces these as machine-checkable gates.
+governance:
+  domain_accuracy_target: 0.90        # >= 90% domain-level mapping accuracy
+  qc_parity_target: 0.99              # >= 99% QC parity vs reference
+  require_human_signoff: true         # HITL is non-negotiable (deck page 6)
+  block_submission_on_error: true     # no ERROR-severity issue may pass the gate
+  part11_audit_trail: true            # 21 CFR Part 11 audit trail on every run
+
+# Roles permitted to apply an electronic signature (maps to RACI, deck page 10:
+# Data Mgmt & Solutions owns HITL sign-off; Validation/QA owns the GxP gate).
+authorized_signers:
+  - role: "CDISC / Biostat SME"
+    can_sign: [mapping_review]
+  - role: "Validation / QA Engineer"
+    can_sign: [validation_gate]
+  - role: "Qualified Statistician"
+    can_sign: [mapping_review, validation_gate, submission_release]

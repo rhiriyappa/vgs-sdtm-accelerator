@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ODM xmlns="http://www.cdisc.org/ns/odm/v1.3"
+     xmlns:def="http://www.cdisc.org/ns/def/v2.1"
+     FileType="Snapshot" ODMVersion="1.3.2"
+     SourceSystem="VGS SDTM Delivery Accelerator">
+ <Study OID="VGS-DEMO-101">
+  <GlobalVariables>
+   <StudyName>VGS-DEMO-101</StudyName>
+   <StudyDescription>Demo SDTM submission metadata</StudyDescription>
+   <ProtocolName>VGS-DEMO-101</ProtocolName>
+  </GlobalVariables>
+  <MetaDataVersion OID="MDV.1" Name="SDTMIG 3.4"
+     def:DefineVersion="2.1.0" def:StandardName="SDTMIG"
+     def:StandardVersion="3.4">
+  <ItemGroupDef OID="IG.DM" Name="DM" Repeating="No" Purpose="Tabulation" Structure="one_record_per_subject">
+      <ItemRef ItemOID="IT.DM.STUDYID" OrderNumber="1" Mandatory="Yes"/>
+      <ItemRef ItemOID="IT.DM.DOMAIN" OrderNumber="2" Mandatory="Yes"/>
+      <ItemRef ItemOID="IT.DM.USUBJID" OrderNumber="3" Mandatory="Yes" KeySequence="1"/>
+      <ItemRef ItemOID="IT.DM.SUBJID" OrderNumber="4" Mandatory="Yes"/>
+      <ItemRef ItemOID="IT.DM.RFSTDTC" OrderNumber="5" Mandatory="Yes"/>
+      <ItemRef ItemOID="IT.DM.RFENDTC" OrderNumber="6" Mandatory="Yes"/>
+      <ItemRef ItemOID="IT.DM.RFICDTC" OrderNumber="7" Mandatory="Yes"/>
+      <ItemRef ItemOID="IT.DM.SITEID" OrderNumber="8" Mandatory="Yes"/>
+      <ItemRef ItemOID="IT.DM.BRTHDTC" OrderNumber="9" Mandatory="Yes"/>
+      <ItemRef ItemOID="IT.DM.AGE" OrderNumber="10" Mandatory="Yes"/>
+      <ItemRef ItemOID="IT.DM.AGEU" OrderNumber="11" Mandatory="Yes"/>
+      <ItemRef ItemOID="IT.DM.SEX" OrderNumber="12" Mandatory="Yes"/>
+      <ItemRef ItemOID="IT.DM.RACE" OrderNumber="13" Mandatory="Yes"/>
+      <ItemRef ItemOID="IT.DM.ETHNIC" OrderNumber="14" Mandatory="Yes"/>
+      <ItemRef ItemOID="IT.DM.ARMCD" OrderNumber="15" Mandatory="Yes"/>
+      <ItemRef ItemOID="IT.DM.ARM" OrderNumber="16" Mandatory="Yes"/>
+      <ItemRef ItemOID="IT.DM.ACTARMCD" OrderNumber="17" Mandatory="Yes"/>
+      <ItemRef ItemOID="IT.DM.ACTARM" OrderNumber="18" Mandatory="Yes"/>
+      <ItemRef ItemOID="IT.DM.COUNTRY" OrderNumber="19" Mandatory="Yes"/>
+  </ItemGroupDef>
+  <ItemGroupDef OID="IG.AE" Name="AE" Repeating="Yes" Purpose="Tabulation" Structure="one_record_per_event_per_subject">
+      <ItemRef ItemOID="IT.AE.STUDYID" OrderNumber="1" Mandatory="Yes"/>
+      <ItemRef ItemOID="IT.AE.DOMAIN" OrderNumber="2" Mandatory="Yes"/>
+      <ItemRef ItemOID="IT.AE.USUBJID" OrderNumber="3" Mandatory="Yes" KeySequence="1"/>
+      <ItemRef ItemOID="IT.AE.AESEQ" OrderNumber="4" Mandatory="Yes"/>
+      <ItemRef ItemOID="IT.AE.AETERM" OrderNumber="5" Mandatory="Yes"/>
+      <ItemRef ItemOID="IT.AE.AEDECOD" OrderNumber="6" Mandatory="Yes" KeySequence="2"/>
+      <ItemRef ItemOID="IT.AE.AEPTCD" OrderNumber="7" Mandatory="Yes"/>
+      <ItemRef ItemOID="IT.AE.AESTDTC" OrderNumber="8" Mandatory="Yes" KeySequence="3"/>
+      <ItemRef ItemOID="IT.AE.AEENDTC" OrderNumber="9" Mandatory="Yes"/>
+      <ItemRef ItemOID="IT.AE.AESEV" OrderNumber="10" Mandatory="Yes"/>
+      <ItemRef ItemOID="IT.AE.AESER" OrderNumber="11" Mandatory="Yes"/>
+      <ItemRef ItemOID="IT.AE.AEREL" OrderNumber="12" Mandatory="Yes"/>
+      <ItemRef ItemOID="IT.AE.AEOUT" OrderNumber="13" Mandatory="Yes"/>
+  </ItemGroupDef>
+  <ItemGroupDef OID="IG.VS" Name="VS" Repeating="Yes" Purpose="Tabulation" Structure="one_record_per_test_per_visit_per_subject">
+      <ItemRef ItemOID="IT.VS.STUDYID" OrderNumber="1" Mandatory="Yes"/>
+      <ItemRef ItemOID="IT.VS.DOMAIN" OrderNumber="2" Mandatory="Yes"/>
+      <ItemRef ItemOID="IT.VS.USUBJID" OrderNumber="3" Mandatory="Yes" KeySequence="1"/>
+      <ItemRef ItemOID="IT.VS.VSSEQ" OrderNumber="4" Mandatory="Yes"/>
+      <ItemRef ItemOID="IT.VS.VSTESTCD" OrderNumber="5" Mandatory="Yes" KeySequence="2"/>
+      <ItemRef ItemOID="IT.VS.VSTEST" OrderNumber="6" Mandatory="Yes"/>
+      <ItemRef ItemOID="IT.VS.VSORRES" OrderNumber="7" Mandatory="Yes"/>
+      <ItemRef ItemOID="IT.VS.VSORRESU" OrderNumber="8" Mandatory="Yes"/>
+      <ItemRef ItemOID="IT.VS.VSSTRESC" OrderNumber="9" Mandatory="Yes"/>
+      <ItemRef ItemOID="IT.VS.VSSTRESN" OrderNumber="10" Mandatory="Yes"/>
+      <ItemRef ItemOID="IT.VS.VSSTRESU" OrderNumber="11" Mandatory="Yes"/>
+      <ItemRef ItemOID="IT.VS.VSDTC" OrderNumber="12" Mandatory="Yes"/>
+      <ItemRef ItemOID="IT.VS.VISIT" OrderNumber="13" Mandatory="Yes"/>
+      <ItemRef ItemOID="IT.VS.VISITNUM" OrderNumber="14" Mandatory="Yes" KeySequence="3"/>
+  </ItemGroupDef>
+  <ItemGroupDef OID="IG.LB" Name="LB" Repeating="Yes" Purpose="Tabulation" Structure="one_record_per_test_per_visit_per_subject">
+      <ItemRef ItemOID="IT.LB.STUDYID" OrderNumber="1" Mandatory="Yes"/>
+      <ItemRef ItemOID="IT.LB.DOMAIN" OrderNumber="2" Mandatory="Yes"/>
+      <ItemRef ItemOID="IT.LB.USUBJID" OrderNumber="3" Mandatory="Yes" KeySequence="1"/>
+      <ItemRef ItemOID="IT.LB.LBSEQ" OrderNumber="4" Mandatory="Yes"/>
+      <ItemRef ItemOID="IT.LB.LBTESTCD" OrderNumber="5" Mandatory="Yes" KeySequence="2"/>
+      <ItemRef ItemOID="IT.LB.LBTEST" OrderNumber="6" Mandatory="Yes"/>
+      <ItemRef ItemOID="IT.LB.LBORRES" OrderNumber="7" Mandatory="Yes"/>
+      <ItemRef ItemOID="IT.LB.LBORRESU" OrderNumber="8" Mandatory="Yes"/>
+      <ItemRef ItemOID="IT.LB.LBSTRESC" OrderNumber="9" Mandatory="Yes"/>
+      <ItemRef ItemOID="IT.LB.LBSTRESN" OrderNumber="10" Mandatory="Yes"/>
+      <ItemRef ItemOID="IT.LB.LBSTRESU" OrderNumber="11" Mandatory="Yes"/>
+      <ItemRef ItemOID="IT.LB.LBORNRLO" OrderNumber="12" Mandatory="Yes"/>
+      <ItemRef ItemOID="IT.LB.LBORNRHI" OrderNumber="13" Mandatory="Yes"/>
+      <ItemRef ItemOID="IT.LB.LBNRIND" OrderNumber="14" Mandatory="Yes"/>
+      <ItemRef ItemOID="IT.LB.LBDTC" OrderNumber="15" Mandatory="Yes"/>
+      <ItemRef ItemOID="IT.LB.VISIT" OrderNumber="16" Mandatory="Yes"/>
+      <ItemRef ItemOID="IT.LB.VISITNUM" OrderNumber="17" Mandatory="Yes" KeySequence="3"/>
+  </ItemGroupDef>
+  <ItemGroupDef OID="IG.CM" Name="CM" Repeating="Yes" Purpose="Tabulation" Structure="one_record_per_intervention_per_subject">
+      <ItemRef ItemOID="IT.CM.STUDYID" OrderNumber="1" Mandatory="Yes"/>
+      <ItemRef ItemOID="IT.CM.DOMAIN" OrderNumber="2" Mandatory="Yes"/>
+      <ItemRef ItemOID="IT.CM.USUBJID" OrderNumber="3" Mandatory="Yes" KeySequence="1"/>
+      <ItemRef ItemOID="IT.CM.CMSEQ" OrderNumber="4" Mandatory="Yes"/>
+      <ItemRef ItemOID="IT.CM.CMTRT" OrderNumber="5" Mandatory="Yes" KeySequence="2"/>
+      <ItemRef ItemOID="IT.CM.CMDECOD" OrderNumber="6" Mandatory="Yes"/>
+      <ItemRef ItemOID="IT.CM.CMSTDTC" OrderNumber="7" Mandatory="Yes" KeySequence="3"/>
+      <ItemRef ItemOID="IT.CM.CMENDTC" OrderNumber="8" Mandatory="Yes"/>
+      <ItemRef ItemOID="IT.CM.CMDOSE" OrderNumber="9" Mandatory="Yes"/>
+      <ItemRef ItemOID="IT.CM.CMDOSU" OrderNumber="10" Mandatory="Yes"/>
+      <ItemRef ItemOID="IT.CM.CMROUTE" OrderNumber="11" Mandatory="Yes"/>
+      <ItemRef ItemOID="IT.CM.CMINDC" OrderNumber="12" Mandatory="Yes"/>
+  </ItemGroupDef>
+  <ItemDef OID="IT.DM.STUDYID" Name="STUDYID" DataType="text"><Description><TranslatedText xml:lang="en">assign</TranslatedText></Description></ItemDef>
+  <ItemDef OID="IT.DM.DOMAIN" Name="DOMAIN" DataType="text"><Description><TranslatedText xml:lang="en">hardcode</TranslatedText></Description></ItemDef>
+  <ItemDef OID="IT.DM.USUBJID" Name="USUBJID" DataType="text"><Description><TranslatedText xml:lang="en">derive_usubjid</TranslatedText></Description></ItemDef>
+  <ItemDef OID="IT.DM.SUBJID" Name="SUBJID" DataType="text"><Description><TranslatedText xml:lang="en">assign</TranslatedText></Description></ItemDef>
+  <ItemDef OID="IT.DM.RFSTDTC" Name="RFSTDTC" DataType="text"><Description><TranslatedText xml:lang="en">iso_date</TranslatedText></Description></ItemDef>
+  <ItemDef OID="IT.DM.RFENDTC" Name="RFENDTC" DataType="text"><Description><TranslatedText xml:lang="en">iso_date</TranslatedText></Description></ItemDef>
+  <ItemDef OID="IT.DM.RFICDTC" Name="RFICDTC" DataType="text"><Description><TranslatedText xml:lang="en">iso_date</TranslatedText></Description></ItemDef>
+  <ItemDef OID="IT.DM.SITEID" Name="SITEID" DataType="text"><Description><TranslatedText xml:lang="en">assign</TranslatedText></Description></ItemDef>
+  <ItemDef OID="IT.DM.BRTHDTC" Name="BRTHDTC" DataType="text"><Description><TranslatedText xml:lang="en">iso_date</TranslatedText></Description></ItemDef>
+  <ItemDef OID="IT.DM.AGE" Name="AGE" DataType="text"><Description><TranslatedText xml:lang="en">copy_numeric</TranslatedText></Description></ItemDef>
+  <ItemDef OID="IT.DM.AGEU" Name="AGEU" DataType="text"><Description><TranslatedText xml:lang="en">assign</TranslatedText></Description></ItemDef>
+  <ItemDef OID="IT.DM.SEX" Name="SEX" DataType="text" Codelist="SEX"><Description><TranslatedText xml:lang="en">assign_ct</TranslatedText></Description></ItemDef>
+  <ItemDef OID="IT.DM.RACE" Name="RACE" DataType="text" Codelist="RACE"><Description><TranslatedText xml:lang="en">assign_ct</TranslatedText></Description></ItemDef>
+  <ItemDef OID="IT.DM.ETHNIC" Name="ETHNIC" DataType="text" Codelist="ETHNIC"><Description><TranslatedText xml:lang="en">assign_ct</TranslatedText></Description></ItemDef>
+  <ItemDef OID="IT.DM.ARMCD" Name="ARMCD" DataType="text"><Description><TranslatedText xml:lang="en">assign</TranslatedText></Description></ItemDef>
+  <ItemDef OID="IT.DM.ARM" Name="ARM" DataType="text"><Description><TranslatedText xml:lang="en">assign</TranslatedText></Description></ItemDef>
+  <ItemDef OID="IT.DM.ACTARMCD" Name="ACTARMCD" DataType="text"><Description><TranslatedText xml:lang="en">assign</TranslatedText></Description></ItemDef>
+  <ItemDef OID="IT.DM.ACTARM" Name="ACTARM" DataType="text"><Description><TranslatedText xml:lang="en">assign</TranslatedText></Description></ItemDef>
+  <ItemDef OID="IT.DM.COUNTRY" Name="COUNTRY" DataType="text"><Description><TranslatedText xml:lang="en">assign</TranslatedText></Description></ItemDef>
+  <ItemDef OID="IT.AE.STUDYID" Name="STUDYID" DataType="text"><Description><TranslatedText xml:lang="en">assign</TranslatedText></Description></ItemDef>
+  <ItemDef OID="IT.AE.DOMAIN" Name="DOMAIN" DataType="text"><Description><TranslatedText xml:lang="en">hardcode</TranslatedText></Description></ItemDef>
+  <ItemDef OID="IT.AE.USUBJID" Name="USUBJID" DataType="text"><Description><TranslatedText xml:lang="en">derive_usubjid</TranslatedText></Description></ItemDef>
+  <ItemDef OID="IT.AE.AESEQ" Name="AESEQ" DataType="text"><Description><TranslatedText xml:lang="en">derive_seq</TranslatedText></Description></ItemDef>
+  <ItemDef OID="IT.AE.AETERM" Name="AETERM" DataType="text"><Description><TranslatedText xml:lang="en">assign</TranslatedText></Description></ItemDef>
+  <ItemDef OID="IT.AE.AEDECOD" Name="AEDECOD" DataType="text"><Description><TranslatedText xml:lang="en">assign</TranslatedText></Description></ItemDef>
+  <ItemDef OID="IT.AE.AEPTCD" Name="AEPTCD" DataType="text"><Description><TranslatedText xml:lang="en">assign</TranslatedText></Description></ItemDef>
+  <ItemDef OID="IT.AE.AESTDTC" Name="AESTDTC" DataType="text"><Description><TranslatedText xml:lang="en">iso_date</TranslatedText></Description></ItemDef>
+  <ItemDef OID="IT.AE.AEENDTC" Name="AEENDTC" DataType="text"><Description><TranslatedText xml:lang="en">iso_date</TranslatedText></Description></ItemDef>
+  <ItemDef OID="IT.AE.AESEV" Name="AESEV" DataType="text" Codelist="AESEV"><Description><TranslatedText xml:lang="en">assign_ct</TranslatedText></Description></ItemDef>
+  <ItemDef OID="IT.AE.AESER" Name="AESER" DataType="text" Codelist="NY"><Description><TranslatedText xml:lang="en">assign_ct</TranslatedText></Description></ItemDef>
+  <ItemDef OID="IT.AE.AEREL" Name="AEREL" DataType="text"><Description><TranslatedText xml:lang="en">assign</TranslatedText></Description></ItemDef>
+  <ItemDef OID="IT.AE.AEOUT" Name="AEOUT" DataType="text" Codelist="OUT"><Description><TranslatedText xml:lang="en">assign_ct</TranslatedText></Description></ItemDef>
+  <ItemDef OID="IT.VS.STUDYID" Name="STUDYID" DataType="text"><Description><TranslatedText xml:lang="en">assign</TranslatedText></Description></ItemDef>
+  <ItemDef OID="IT.VS.DOMAIN" Name="DOMAIN" DataType="text"><Description><TranslatedText xml:lang="en">hardcode</TranslatedText></Description></ItemDef>
+  <ItemDef OID="IT.VS.USUBJID" Name="USUBJID" DataType="text"><Description><TranslatedText xml:lang="en">derive_usubjid</TranslatedText></Description></ItemDef>
+  <ItemDef OID="IT.VS.VSSEQ" Name="VSSEQ" DataType="text"><Description><TranslatedText xml:lang="en">derive_seq</TranslatedText></Description></ItemDef>
+  <ItemDef OID="IT.VS.VSTESTCD" Name="VSTESTCD" DataType="text"><Description><TranslatedText xml:lang="en">pivot_key</TranslatedText></Description></ItemDef>
+  <ItemDef OID="IT.VS.VSTEST" Name="VSTEST" DataType="text"><Description><TranslatedText xml:lang="en">pivot_label</TranslatedText></Description></ItemDef>
+  <ItemDef OID="IT.VS.VSORRES" Name="VSORRES" DataType="text"><Description><TranslatedText xml:lang="en">pivot_value</TranslatedText></Description></ItemDef>
+  <ItemDef OID="IT.VS.VSORRESU" Name="VSORRESU" DataType="text"><Description><TranslatedText xml:lang="en">pivot_unit</TranslatedText></Description></ItemDef>
+  <ItemDef OID="IT.VS.VSSTRESC" Name="VSSTRESC" DataType="text"><Description><TranslatedText xml:lang="en">pivot_value</TranslatedText></Description></ItemDef>
+  <ItemDef OID="IT.VS.VSSTRESN" Name="VSSTRESN" DataType="text"><Description><TranslatedText xml:lang="en">pivot_value_numeric</TranslatedText></Description></ItemDef>
+  <ItemDef OID="IT.VS.VSSTRESU" Name="VSSTRESU" DataType="text"><Description><TranslatedText xml:lang="en">pivot_unit</TranslatedText></Description></ItemDef>
+  <ItemDef OID="IT.VS.VSDTC" Name="VSDTC" DataType="text"><Description><TranslatedText xml:lang="en">iso_date</TranslatedText></Description></ItemDef>
+  <ItemDef OID="IT.VS.VISIT" Name="VISIT" DataType="text"><Description><TranslatedText xml:lang="en">assign</TranslatedText></Description></ItemDef>
+  <ItemDef OID="IT.VS.VISITNUM" Name="VISITNUM" DataType="text"><Description><TranslatedText xml:lang="en">copy_numeric</TranslatedText></Description></ItemDef>
+  <ItemDef OID="IT.LB.STUDYID" Name="STUDYID" DataType="text"><Description><TranslatedText xml:lang="en">assign</TranslatedText></Description></ItemDef>
+  <ItemDef OID="IT.LB.DOMAIN" Name="DOMAIN" DataType="text"><Description><TranslatedText xml:lang="en">hardcode</TranslatedText></Description></ItemDef>
+  <ItemDef OID="IT.LB.USUBJID" Name="USUBJID" DataType="text"><Description><TranslatedText xml:lang="en">derive_usubjid</TranslatedText></Description></ItemDef>
+  <ItemDef OID="IT.LB.LBSEQ" Name="LBSEQ" DataType="text"><Description><TranslatedText xml:lang="en">derive_seq</TranslatedText></Description></ItemDef>
+  <ItemDef OID="IT.LB.LBTESTCD" Name="LBTESTCD" DataType="text"><Description><TranslatedText xml:lang="en">pivot_key</TranslatedText></Description></ItemDef>
+  <ItemDef OID="IT.LB.LBTEST" Name="LBTEST" DataType="text"><Description><TranslatedText xml:lang="en">pivot_label</TranslatedText></Description></ItemDef>
+  <ItemDef OID="IT.LB.LBORRES" Name="LBORRES" DataType="text"><Description><TranslatedText xml:lang="en">pivot_value</TranslatedText></Description></ItemDef>
+  <ItemDef OID="IT.LB.LBORRESU" Name="LBORRESU" DataType="text"><Description><TranslatedText xml:lang="en">pivot_unit</TranslatedText></Description></ItemDef>
+  <ItemDef OID="IT.LB.LBSTRESC" Name="LBSTRESC" DataType="text"><Description><TranslatedText xml:lang="en">pivot_value</TranslatedText></Description></ItemDef>
+  <ItemDef OID="IT.LB.LBSTRESN" Name="LBSTRESN" DataType="text"><Description><TranslatedText xml:lang="en">pivot_value_numeric</TranslatedText></Description></ItemDef>
+  <ItemDef OID="IT.LB.LBSTRESU" Name="LBSTRESU" DataType="text"><Description><TranslatedText xml:lang="en">pivot_unit</TranslatedText></Description></ItemDef>
+  <ItemDef OID="IT.LB.LBORNRLO" Name="LBORNRLO" DataType="text"><Description><TranslatedText xml:lang="en">pivot_nrlo</TranslatedText></Description></ItemDef>
+  <ItemDef OID="IT.LB.LBORNRHI" Name="LBORNRHI" DataType="text"><Description><TranslatedText xml:lang="en">pivot_nrhi</TranslatedText></Description></ItemDef>
+  <ItemDef OID="IT.LB.LBNRIND" Name="LBNRIND" DataType="text"><Description><TranslatedText xml:lang="en">nrind</TranslatedText></Description></ItemDef>
+  <ItemDef OID="IT.LB.LBDTC" Name="LBDTC" DataType="text"><Description><TranslatedText xml:lang="en">iso_date</TranslatedText></Description></ItemDef>
+  <ItemDef OID="IT.LB.VISIT" Name="VISIT" DataType="text"><Description><TranslatedText xml:lang="en">assign</TranslatedText></Description></ItemDef>
+  <ItemDef OID="IT.LB.VISITNUM" Name="VISITNUM" DataType="text"><Description><TranslatedText xml:lang="en">copy_numeric</TranslatedText></Description></ItemDef>
+  <ItemDef OID="IT.CM.STUDYID" Name="STUDYID" DataType="text"><Description><TranslatedText xml:lang="en">assign</TranslatedText></Description></ItemDef>
+  <ItemDef OID="IT.CM.DOMAIN" Name="DOMAIN" DataType="text"><Description><TranslatedText xml:lang="en">hardcode</TranslatedText></Description></ItemDef>
+  <ItemDef OID="IT.CM.USUBJID" Name="USUBJID" DataType="text"><Description><TranslatedText xml:lang="en">derive_usubjid</TranslatedText></Description></ItemDef>
+  <ItemDef OID="IT.CM.CMSEQ" Name="CMSEQ" DataType="text"><Description><TranslatedText xml:lang="en">derive_seq</TranslatedText></Description></ItemDef>
+  <ItemDef OID="IT.CM.CMTRT" Name="CMTRT" DataType="text"><Description><TranslatedText xml:lang="en">assign</TranslatedText></Description></ItemDef>
+  <ItemDef OID="IT.CM.CMDECOD" Name="CMDECOD" DataType="text"><Description><TranslatedText xml:lang="en">assign</TranslatedText></Description></ItemDef>
+  <ItemDef OID="IT.CM.CMSTDTC" Name="CMSTDTC" DataType="text"><Description><TranslatedText xml:lang="en">iso_date</TranslatedText></Description></ItemDef>
+  <ItemDef OID="IT.CM.CMENDTC" Name="CMENDTC" DataType="text"><Description><TranslatedText xml:lang="en">iso_date</TranslatedText></Description></ItemDef>
+  <ItemDef OID="IT.CM.CMDOSE" Name="CMDOSE" DataType="text"><Description><TranslatedText xml:lang="en">copy_numeric</TranslatedText></Description></ItemDef>
+  <ItemDef OID="IT.CM.CMDOSU" Name="CMDOSU" DataType="text" Codelist="UNIT"><Description><TranslatedText xml:lang="en">assign_ct</TranslatedText></Description></ItemDef>
+  <ItemDef OID="IT.CM.CMROUTE" Name="CMROUTE" DataType="text" Codelist="ROUTE"><Description><TranslatedText xml:lang="en">assign_ct</TranslatedText></Description></ItemDef>
+  <ItemDef OID="IT.CM.CMINDC" Name="CMINDC" DataType="text"><Description><TranslatedText xml:lang="en">assign</TranslatedText></Description></ItemDef>
+  </MetaDataVersion>
+ </Study>
+</ODM>

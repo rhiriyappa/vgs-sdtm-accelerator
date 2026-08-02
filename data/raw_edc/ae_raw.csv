@@ -1,0 +1,91 @@
+STUDYID,SUBJID,AETERM,AEDECOD,AEPTCD,AESTDAT,AEENDAT,AESEV,AESER,AEREL,AEOUT
+VGS-DEMO-101,0002,Headache,,,06-APR-2025,09-APR-2025,Severe,N,Possibly Related,Recovering/Resolving
+VGS-DEMO-101,0002,Headache,,,28-MAR-2025,05-APR-2025,Moderate,N,Not Related,Recovering/Resolving
+VGS-DEMO-101,0002,Rash,Rash,10037844,22-JAN-2025,23-JAN-2025,Moderate,N,Possibly Related,Recovered/Resolved
+VGS-DEMO-101,0002,Diarrhoea,Diarrhoea,10012735,23-MAR-2025,07-APR-2025,Mild,N,Related,Recovering/Resolving
+VGS-DEMO-101,0003,Insomnia,Insomnia,10022437,21-FEB-2025,06-MAR-2025,Severe,N,Not Related,Recovered/Resolved
+VGS-DEMO-101,0004,Headache,Headache,10019211,17-FEB-2025,05-MAR-2025,Severe,N,Not Related,Recovered/Resolved
+VGS-DEMO-101,0005,Nausea,Nausea,10028813,10-MAR-2025,16-MAR-2025,Moderate,N,Possibly Related,Recovering/Resolving
+VGS-DEMO-101,0005,Insomnia,,,02-APR-2025,12-APR-2025,Severe,N,Possibly Related,Not Recovered/Not Resolved
+VGS-DEMO-101,0005,Headache,Headache,10019211,04-APR-2025,09-APR-2025,Moderate,Y,Not Related,Recovered/Resolved
+VGS-DEMO-101,0005,Insomnia,Insomnia,10022437,22-FEB-2025,24-FEB-2025,Severe,Y,Related,Not Recovered/Not Resolved
+VGS-DEMO-101,0006,Fatigue,Fatigue,10016256,16-FEB-2025,22-FEB-2025,Severe,N,Possibly Related,Not Recovered/Not Resolved
+VGS-DEMO-101,0007,Vomiting,Vomiting,10047700,13-APR-2025,14-APR-2025,Moderate,N,Not Related,Recovering/Resolving
+VGS-DEMO-101,0008,Dizziness,Dizziness,10013573,29-MAR-2025,15-APR-2025,Severe,N,Related,Not Recovered/Not Resolved
+VGS-DEMO-101,0008,Vomiting,Vomiting,10047700,03-MAR-2025,22-MAR-2025,Mild,N,Related,Not Recovered/Not Resolved
+VGS-DEMO-101,0009,Rash,Rash,10037844,07-MAR-2025,22-MAR-2025,Severe,N,Not Related,Not Recovered/Not Resolved
+VGS-DEMO-101,0010,Headache,Headache,10019211,17-MAY-2025,20-MAY-2025,Mild,Y,Not Related,Not Recovered/Not Resolved
+VGS-DEMO-101,0010,Headache,Headache,10019211,05-APR-2025,20-APR-2025,Mild,N,Possibly Related,Not Recovered/Not Resolved
+VGS-DEMO-101,0010,Fatigue,Fatigue,10016256,23-MAR-2025,01-APR-2025,Mild,N,Related,Recovered/Resolved
+VGS-DEMO-101,0011,Dizziness,Dizziness,10013573,03-MAY-2025,07-MAY-2025,Severe,N,Not Related,Recovered/Resolved
+VGS-DEMO-101,0011,Rash,Rash,10037844,06-APR-2025,10-APR-2025,Moderate,N,Not Related,Recovering/Resolving
+VGS-DEMO-101,0012,Rash,Rash,10037844,10-APR-2025,19-APR-2025,Mild,N,Possibly Related,Not Recovered/Not Resolved
+VGS-DEMO-101,0012,Fatigue,Fatigue,10016256,22-APR-2025,02-MAY-2025,Mild,N,Related,Recovering/Resolving
+VGS-DEMO-101,0013,Insomnia,,,12-APR-2025,29-APR-2025,Moderate,N,Related,Not Recovered/Not Resolved
+VGS-DEMO-101,0013,Fatigue,Fatigue,10016256,24-APR-2025,13-MAY-2025,Mild,N,Not Related,Not Recovered/Not Resolved
+VGS-DEMO-101,0014,Headache,Headache,10019211,09-APR-2025,10-APR-2025,Moderate,N,Related,Not Recovered/Not Resolved
+VGS-DEMO-101,0014,Rash,Rash,10037844,08-MAR-2025,22-MAR-2025,Mild,N,Related,Not Recovered/Not Resolved
+VGS-DEMO-101,0015,Nausea,Nausea,10028813,23-APR-2025,28-APR-2025,Moderate,N,Possibly Related,Recovered/Resolved
+VGS-DEMO-101,0016,Insomnia,Insomnia,10022437,01-FEB-2025,20-FEB-2025,Mild,Y,Not Related,Recovered/Resolved
+VGS-DEMO-101,0016,Dizziness,,,16-JAN-2025,24-JAN-2025,Severe,N,Possibly Related,Not Recovered/Not Resolved
+VGS-DEMO-101,0017,Insomnia,,,14-FEB-2025,20-FEB-2025,Moderate,N,Possibly Related,Not Recovered/Not Resolved
+VGS-DEMO-101,0018,Nausea,Nausea,10028813,18-APR-2025,05-MAY-2025,Severe,N,Not Related,Recovering/Resolving
+VGS-DEMO-101,0018,Insomnia,Insomnia,10022437,17-MAR-2025,26-MAR-2025,Mild,N,Possibly Related,Not Recovered/Not Resolved
+VGS-DEMO-101,0020,Vomiting,Vomiting,10047700,10-APR-2025,28-APR-2025,Mild,N,Not Related,Not Recovered/Not Resolved
+VGS-DEMO-101,0021,Nausea,Nausea,10028813,22-MAY-2025,02-MAY-2025,Mild,N,Related,Recovering/Resolving
+VGS-DEMO-101,0021,Vomiting,Vomiting,10047700,19-MAR-2025,15-MAR-2025,Moderate,N,Not Related,Recovered/Resolved
+VGS-DEMO-101,0022,Diarrhoea,Diarrhoea,10012735,01-MAR-2025,03-MAR-2025,Moderate,N,Not Related,Recovering/Resolving
+VGS-DEMO-101,0022,Insomnia,Insomnia,10022437,13-APR-2025,19-APR-2025,Moderate,N,Possibly Related,Recovered/Resolved
+VGS-DEMO-101,0023,Insomnia,Insomnia,10022437,05-MAY-2025,11-MAY-2025,Moderate,N,Not Related,Recovered/Resolved
+VGS-DEMO-101,0024,Diarrhoea,Diarrhoea,10012735,17-MAR-2025,01-APR-2025,Mild,N,Possibly Related,Not Recovered/Not Resolved
+VGS-DEMO-101,0024,Nausea,Nausea,10028813,08-MAR-2025,13-MAR-2025,Severe,N,Related,Recovering/Resolving
+VGS-DEMO-101,0024,Nausea,,,05-APR-2025,17-APR-2025,Moderate,N,Not Related,Recovered/Resolved
+VGS-DEMO-101,0025,Dizziness,Dizziness,10013573,06-APR-2025,21-APR-2025,Mild,N,Related,Not Recovered/Not Resolved
+VGS-DEMO-101,0025,Headache,Headache,10019211,30-APR-2025,18-MAY-2025,Moderate,N,Not Related,Recovering/Resolving
+VGS-DEMO-101,0025,Vomiting,,,18-MAR-2025,05-APR-2025,Severe,Y,Possibly Related,Recovered/Resolved
+VGS-DEMO-101,0025,Fatigue,Fatigue,10016256,27-FEB-2025,04-MAR-2025,Mild,N,Not Related,Recovering/Resolving
+VGS-DEMO-101,0026,Headache,Headache,10019211,25-FEB-2025,11-MAR-2025,Severe,Y,Related,Recovering/Resolving
+VGS-DEMO-101,0026,Headache,,,07-MAY-2025,21-MAY-2025,Severe,N,Possibly Related,Not Recovered/Not Resolved
+VGS-DEMO-101,0027,Headache,,,23-FEB-2025,28-FEB-2025,Severe,N,Not Related,Not Recovered/Not Resolved
+VGS-DEMO-101,0027,Headache,,,11-APR-2025,13-APR-2025,Mild,N,Related,Recovered/Resolved
+VGS-DEMO-101,0027,Insomnia,Insomnia,10022437,18-JAN-2025,06-FEB-2025,Severe,N,Related,Recovering/Resolving
+VGS-DEMO-101,0029,Fatigue,Fatigue,10016256,19-MAR-2025,24-MAR-2025,Severe,N,Possibly Related,Not Recovered/Not Resolved
+VGS-DEMO-101,0030,Vomiting,Vomiting,10047700,26-APR-2025,01-MAY-2025,Severe,N,Possibly Related,Recovering/Resolving
+VGS-DEMO-101,0030,Dizziness,Dizziness,10013573,17-MAR-2025,06-APR-2025,Mild,N,Related,Not Recovered/Not Resolved
+VGS-DEMO-101,0031,Dizziness,,,08-MAR-2025,28-MAR-2025,Mild,N,Not Related,Recovered/Resolved
+VGS-DEMO-101,0031,Dizziness,Dizziness,10013573,26-FEB-2025,04-MAR-2025,Moderate,Y,Possibly Related,Not Recovered/Not Resolved
+VGS-DEMO-101,0031,Dizziness,Dizziness,10013573,22-MAR-2025,24-MAR-2025,Mild,N,Not Related,Not Recovered/Not Resolved
+VGS-DEMO-101,0031,Fatigue,Fatigue,10016256,17-APR-2025,02-MAY-2025,Mild,Y,Related,Recovered/Resolved
+VGS-DEMO-101,0034,Nausea,,,18-MAY-2025,19-MAY-2025,Moderate,N,Possibly Related,Recovering/Resolving
+VGS-DEMO-101,0035,Insomnia,Insomnia,10022437,21-APR-2025,01-MAY-2025,Severe,Y,Possibly Related,Recovering/Resolving
+VGS-DEMO-101,0035,Diarrhoea,Diarrhoea,10012735,12-MAR-2025,16-MAR-2025,Moderate,N,Not Related,Recovered/Resolved
+VGS-DEMO-101,0036,Rash,Rash,10037844,06-FEB-2025,24-FEB-2025,Severe,N,Possibly Related,Recovering/Resolving
+VGS-DEMO-101,0036,Fatigue,Fatigue,10016256,18-MAR-2025,05-APR-2025,Severe,N,Not Related,Recovered/Resolved
+VGS-DEMO-101,0036,Insomnia,Insomnia,10022437,03-MAR-2025,18-MAR-2025,Mild,N,Not Related,Recovered/Resolved
+VGS-DEMO-101,0036,Dizziness,Dizziness,10013573,11-MAR-2025,16-MAR-2025,Moderate,N,Related,Recovering/Resolving
+VGS-DEMO-101,0037,Insomnia,Insomnia,10022437,13-APR-2025,14-APR-2025,Mild,N,Possibly Related,Not Recovered/Not Resolved
+VGS-DEMO-101,0037,Nausea,Nausea,10028813,16-APR-2025,26-APR-2025,Severe,N,Not Related,Recovered/Resolved
+VGS-DEMO-101,0037,Fatigue,Fatigue,10016256,19-MAR-2025,25-MAR-2025,Moderate,N,Not Related,Recovering/Resolving
+VGS-DEMO-101,0037,Insomnia,Insomnia,10022437,17-APR-2025,22-APR-2025,Severe,N,Possibly Related,Not Recovered/Not Resolved
+VGS-DEMO-101,0038,Nausea,Nausea,10028813,28-MAR-2025,17-APR-2025,Mild,N,Related,Not Recovered/Not Resolved
+VGS-DEMO-101,0038,Dizziness,Dizziness,10013573,15-FEB-2025,16-FEB-2025,Moderate,N,Not Related,Recovering/Resolving
+VGS-DEMO-101,0038,Dizziness,,,09-FEB-2025,01-MAR-2025,Severe,Y,Possibly Related,Recovered/Resolved
+VGS-DEMO-101,0039,Insomnia,Insomnia,10022437,23-MAR-2025,05-APR-2025,Moderate,N,Not Related,Not Recovered/Not Resolved
+VGS-DEMO-101,0039,Diarrhoea,Diarrhoea,10012735,05-FEB-2025,15-FEB-2025,Moderate,Y,Not Related,Not Recovered/Not Resolved
+VGS-DEMO-101,0040,Insomnia,Insomnia,10022437,01-FEB-2025,02-FEB-2025,Severe,N,Possibly Related,Not Recovered/Not Resolved
+VGS-DEMO-101,0040,Headache,,,30-JAN-2025,11-FEB-2025,Mild,N,Not Related,Not Recovered/Not Resolved
+VGS-DEMO-101,0040,Diarrhoea,,,07-MAR-2025,16-MAR-2025,Mild,N,Not Related,Recovering/Resolving
+VGS-DEMO-101,0041,Diarrhoea,,,31-MAR-2025,12-APR-2025,Severe,N,Possibly Related,Recovering/Resolving
+VGS-DEMO-101,0041,Dizziness,Dizziness,10013573,12-APR-2025,15-APR-2025,Mild,N,Related,Recovering/Resolving
+VGS-DEMO-101,0041,Nausea,,,13-FEB-2025,23-FEB-2025,Severe,N,Not Related,Not Recovered/Not Resolved
+VGS-DEMO-101,0041,Fatigue,Fatigue,10016256,20-APR-2025,10-MAY-2025,Moderate,N,Possibly Related,Recovering/Resolving
+VGS-DEMO-101,0044,Rash,Rash,10037844,04-MAR-2025,22-MAR-2025,Moderate,N,Possibly Related,Recovered/Resolved
+VGS-DEMO-101,0044,Fatigue,Fatigue,10016256,30-APR-2025,01-MAY-2025,Mild,N,Possibly Related,Recovered/Resolved
+VGS-DEMO-101,0045,Vomiting,Vomiting,10047700,06-APR-2025,14-APR-2025,Mild,N,Possibly Related,Recovering/Resolving
+VGS-DEMO-101,0045,Insomnia,Insomnia,10022437,28-MAR-2025,11-APR-2025,Moderate,N,Possibly Related,Recovering/Resolving
+VGS-DEMO-101,0045,Diarrhoea,Diarrhoea,10012735,06-APR-2025,25-APR-2025,Moderate,N,Related,Recovering/Resolving
+VGS-DEMO-101,0046,Fatigue,Fatigue,10016256,24-JAN-2025,13-FEB-2025,Severe,N,Possibly Related,Recovered/Resolved
+VGS-DEMO-101,0046,Vomiting,Vomiting,10047700,16-FEB-2025,08-MAR-2025,Mild,N,Possibly Related,Recovering/Resolving
+VGS-DEMO-101,0047,Nausea,Nausea,10028813,06-MAY-2025,24-MAY-2025,Mild,N,Possibly Related,Recovered/Resolved
+VGS-DEMO-101,0050,Insomnia,Insomnia,10022437,30-APR-2025,18-MAY-2025,Severe,N,Related,Recovering/Resolving
+VGS-DEMO-101,0050,Rash,Rash,10037844,12-MAR-2025,01-APR-2025,Mild,Y,Possibly Related,Recovering/Resolving

@@ -1,0 +1,16 @@
+# Python dependencies for the VGS SDTM Delivery Accelerator (demo)
+pandas>=2.0
+PyYAML>=6.0
+openpyxl>=3.1        # Excel validation report
+pyreadstat>=1.2      # SAS XPT v5 transport output (FDA submission format)
+
+# Optional (production mapping path): real CDISC pharmaverse stack in R
+#   install.packages(c("sdtm.oak", "dplyr", "readr", "tidyr"))
+# If R + sdtm.oak are on PATH, run with --engine R (or auto).
+
+# Optional (real validation gate): CDISC CORE engine. Install in its OWN venv
+# (it pins old pandas/numpy) and expose the `core` CLI on PATH:
+#   pipx install cdisc-rules-engine   # or a dedicated venv
+#   core update-cache                 # needs a CDISC Library API key
+# Then: python3 src/run_pipeline.py --core-mode auto
+

@@ -1,0 +1,28 @@
+# SDTM mapping specification: DM (Demographics) -- Special Purpose domain.
+# Each entry declares a target SDTM variable and the oak-style operation that
+# derives it from the raw EDC column. The same spec drives BOTH the sdtm.oak (R)
+# program and the pure-Python fallback engine.
+domain: DM
+structure: one_record_per_subject
+raw_dataset: dm_raw.csv
+key_vars: [USUBJID]
+variables:
+  - { var: STUDYID,  method: assign,         from: STUDYID }
+  - { var: DOMAIN,   method: hardcode,       value: DM }
+  - { var: USUBJID,  method: derive_usubjid, from: [STUDYID, SUBJID] }
+  - { var: SUBJID,   method: assign,         from: SUBJID }
+  - { var: RFSTDTC,  method: iso_date,       from: FRSTDSDAT }
+  - { var: RFENDTC,  method: iso_date,       from: LSTVISDAT }
+  - { var: RFICDTC,  method: iso_date,       from: RFICDAT }
+  - { var: SITEID,   method: assign,         from: SITEID }
+  - { var: BRTHDTC,  method: iso_date,       from: BRTHDAT }
+  - { var: AGE,      method: copy_numeric,   from: AGE }
+  - { var: AGEU,     method: assign,         from: AGEU }
+  - { var: SEX,      method: assign_ct,      from: SEX,    codelist: SEX }
+  - { var: RACE,     method: assign_ct,      from: RACE,   codelist: RACE, default: UNKNOWN }
+  - { var: ETHNIC,   method: assign_ct,      from: ETHNIC, codelist: ETHNIC }
+  - { var: ARMCD,    method: assign,         from: ARMCD }
+  - { var: ARM,      method: assign,         from: ARM }
+  - { var: ACTARMCD, method: assign,         from: ARMCD }
+  - { var: ACTARM,   method: assign,         from: ARM }
+  - { var: COUNTRY,  method: assign,         from: COUNTRY }

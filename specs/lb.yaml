@@ -1,0 +1,36 @@
+# SDTM mapping specification: LB (Laboratory) -- Findings class domain.
+# Raw labs are WIDE (one column per analyte); SDTM LB is TALL. Beyond the VS
+# pivot, LB adds standardized units, reference-range bounds, and a derived
+# reference-range indicator (LBNRIND = NORMAL/HIGH/LOW).
+domain: LB
+structure: one_record_per_test_per_visit_per_subject
+raw_dataset: lb_raw.csv
+key_vars: [USUBJID, LBTESTCD, VISITNUM]
+pivot:
+  id_vars: [STUDYID, SUBJID, VISIT, VISITNUM, LBDAT]
+  measures:
+    - { column: WBC,   code: WBC,   label: Leukocytes,                    unit: "10^9/L", low: 4,   high: 11 }
+    - { column: HGB,   code: HGB,   label: Hemoglobin,                    unit: g/dL,     low: 11.5, high: 17.5 }
+    - { column: PLAT,  code: PLAT,  label: Platelets,                     unit: "10^9/L", low: 150, high: 400 }
+    - { column: ALT,   code: ALT,   label: "Alanine Aminotransferase",    unit: U/L,      low: 7,   high: 56 }
+    - { column: AST,   code: AST,   label: "Aspartate Aminotransferase",  unit: U/L,      low: 10,  high: 40 }
+    - { column: CREAT, code: CREAT, label: Creatinine,                    unit: umol/L,   low: 60,  high: 110 }
+    - { column: GLUC,  code: GLUC,  label: Glucose,                       unit: mmol/L,   low: 3.9, high: 6.4 }
+variables:
+  - { var: STUDYID,  method: assign,         from: STUDYID }
+  - { var: DOMAIN,   method: hardcode,       value: LB }
+  - { var: USUBJID,  method: derive_usubjid, from: [STUDYID, SUBJID] }
+  - { var: LBSEQ,    method: derive_seq,     by: USUBJID }
+  - { var: LBTESTCD, method: pivot_key }
+  - { var: LBTEST,   method: pivot_label }
+  - { var: LBORRES,  method: pivot_value }
+  - { var: LBORRESU, method: pivot_unit }
+  - { var: LBSTRESC, method: pivot_value }
+  - { var: LBSTRESN, method: pivot_value_numeric }
+  - { var: LBSTRESU, method: pivot_unit }
+  - { var: LBORNRLO, method: pivot_nrlo }
+  - { var: LBORNRHI, method: pivot_nrhi }
+  - { var: LBNRIND,  method: nrind }
+  - { var: LBDTC,    method: iso_date,       from: LBDAT }
+  - { var: VISIT,    method: assign,         from: VISIT }
+  - { var: VISITNUM, method: copy_numeric,   from: VISITNUM }

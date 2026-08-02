@@ -1,0 +1,41 @@
+{
+  "severity_counts": {
+    "ERROR": 2,
+    "WARNING": 29,
+    "NOTICE": 0
+  },
+  "qc_parity": {
+    "DM": 1.0,
+    "AE": 1.0,
+    "VS": 1.0,
+    "LB": 1.0,
+    "CM": 1.0
+  },
+  "domain_accuracy": {
+    "DM": 1.0,
+    "AE": 0.9778,
+    "VS": 1.0,
+    "LB": 1.0,
+    "CM": 1.0
+  },
+  "thresholds": {
+    "domain_accuracy_target": 0.9,
+    "qc_parity_target": 0.99
+  },
+  "metrics_pass": {
+    "domain_accuracy": true,
+    "qc_parity": true
+  },
+  "errors_present": true,
+  "open_warnings": 29,
+  "core": {
+    "mode": "report",
+    "ran": false,
+    "reason": "CORE report not found: path/to/core_report.json",
+    "findings": 0
+  },
+  "findings_by_source": {
+    "builtin": 31,
+    "CDISC CORE": 0
+  }
+}

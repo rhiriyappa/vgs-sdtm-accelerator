@@ -1,0 +1,32 @@
+# SDTM mapping specification: VS (Vital Signs) -- Findings class domain.
+# Raw EDC delivers vitals WIDE (one column per measurement). SDTM VS is TALL
+# (one row per measurement). The `pivot` block drives the wide->tall transform,
+# an exact analogue of sdtm.oak's ct-driven findings-domain pattern.
+domain: VS
+structure: one_record_per_test_per_visit_per_subject
+raw_dataset: vs_raw.csv
+key_vars: [USUBJID, VSTESTCD, VISITNUM]
+pivot:
+  id_vars: [STUDYID, SUBJID, VISIT, VISITNUM, VSDAT]
+  measures:
+    - { column: SYSBP,  code: SYSBP,  label: "Systolic Blood Pressure",  unit: mmHg }
+    - { column: DIABP,  code: DIABP,  label: "Diastolic Blood Pressure", unit: mmHg }
+    - { column: PULSE,  code: PULSE,  label: "Pulse Rate",               unit: beats/min }
+    - { column: TEMP,   code: TEMP,   label: "Temperature",              unit: C }
+    - { column: HEIGHT, code: HEIGHT, label: "Height",                   unit: cm }
+    - { column: WEIGHT, code: WEIGHT, label: "Weight",                   unit: kg }
+variables:
+  - { var: STUDYID,  method: assign,         from: STUDYID }
+  - { var: DOMAIN,   method: hardcode,       value: VS }
+  - { var: USUBJID,  method: derive_usubjid, from: [STUDYID, SUBJID] }
+  - { var: VSSEQ,    method: derive_seq,     by: USUBJID }
+  - { var: VSTESTCD, method: pivot_key }
+  - { var: VSTEST,   method: pivot_label }
+  - { var: VSORRES,  method: pivot_value }
+  - { var: VSORRESU, method: pivot_unit }
+  - { var: VSSTRESC, method: pivot_value }
+  - { var: VSSTRESN, method: pivot_value_numeric }
+  - { var: VSSTRESU, method: pivot_unit }
+  - { var: VSDTC,    method: iso_date,       from: VSDAT }
+  - { var: VISIT,    method: assign,         from: VISIT }
+  - { var: VISITNUM, method: copy_numeric,   from: VISITNUM }

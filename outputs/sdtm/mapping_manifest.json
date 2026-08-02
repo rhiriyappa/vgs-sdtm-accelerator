@@ -1,0 +1,110 @@
+{
+  "run_utc": "2026-08-01T00:49:12.667424+00:00",
+  "engine_requested": "auto",
+  "engine_used": "python",
+  "sdtm_version": "SDTMIG 3.4",
+  "ct_version": "CDISC CT 2024-12-13 (subset)",
+  "domains": {
+    "DM": {
+      "records": 50,
+      "variables": [
+        "STUDYID",
+        "DOMAIN",
+        "USUBJID",
+        "SUBJID",
+        "RFSTDTC",
+        "RFENDTC",
+        "RFICDTC",
+        "SITEID",
+        "BRTHDTC",
+        "AGE",
+        "AGEU",
+        "SEX",
+        "RACE",
+        "ETHNIC",
+        "ARMCD",
+        "ARM",
+        "ACTARMCD",
+        "ACTARM",
+        "COUNTRY"
+      ]
+    },
+    "AE": {
+      "records": 90,
+      "variables": [
+        "STUDYID",
+        "DOMAIN",
+        "USUBJID",
+        "AESEQ",
+        "AETERM",
+        "AEDECOD",
+        "AEPTCD",
+        "AESTDTC",
+        "AEENDTC",
+        "AESEV",
+        "AESER",
+        "AEREL",
+        "AEOUT"
+      ]
+    },
+    "VS": {
+      "records": 1300,
+      "variables": [
+        "STUDYID",
+        "DOMAIN",
+        "USUBJID",
+        "VSSEQ",
+        "VSTESTCD",
+        "VSTEST",
+        "VSORRES",
+        "VSORRESU",
+        "VSSTRESC",
+        "VSSTRESN",
+        "VSSTRESU",
+        "VSDTC",
+        "VISIT",
+        "VISITNUM"
+      ]
+    },
+    "LB": {
+      "records": 1050,
+      "variables": [
+        "STUDYID",
+        "DOMAIN",
+        "USUBJID",
+        "LBSEQ",
+        "LBTESTCD",
+        "LBTEST",
+        "LBORRES",
+        "LBORRESU",
+        "LBSTRESC",
+        "LBSTRESN",
+        "LBSTRESU",
+        "LBORNRLO",
+        "LBORNRHI",
+        "LBNRIND",
+        "LBDTC",
+        "VISIT",
+        "VISITNUM"
+      ]
+    },
+    "CM": {
+      "records": 73,
+      "variables": [
+        "STUDYID",
+        "DOMAIN",
+        "USUBJID",
+        "CMSEQ",
+        "CMTRT",
+        "CMDECOD",
+        "CMSTDTC",
+        "CMENDTC",
+        "CMDOSE",
+        "CMDOSU",
+        "CMROUTE",
+        "CMINDC"
+      ]
+    }
+  },
+  "unmatched_ct": []
+}

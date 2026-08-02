@@ -1,0 +1,178 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="760" viewBox="0 0 1440 760" role="img" aria-labelledby="title desc">
+  <title id="title">ClinTrialDataFlow oncology teaching workflow</title>
+  <desc id="desc">A visual pathway showing oncology clinical trial data moving from EDC and raw capture through SDTM-style domains, ADaM-style datasets, and final TFL outputs for classroom learning.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f8fafc"/>
+      <stop offset=".52" stop-color="#ecfeff"/>
+      <stop offset="1" stop-color="#fff7ed"/>
+    </linearGradient>
+    <linearGradient id="edc" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0f766e"/>
+      <stop offset="1" stop-color="#38bdf8"/>
+    </linearGradient>
+    <linearGradient id="sdtm" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2563eb"/>
+      <stop offset="1" stop-color="#7dd3fc"/>
+    </linearGradient>
+    <linearGradient id="adam" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#7c3aed"/>
+      <stop offset="1" stop-color="#f0abfc"/>
+    </linearGradient>
+    <linearGradient id="tfl" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ea580c"/>
+      <stop offset="1" stop-color="#facc15"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-30%" width="140%" height="170%">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#0f172a" flood-opacity=".16"/>
+    </filter>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="20"/>
+    </filter>
+    <marker id="arrow" viewBox="0 0 16 16" refX="13" refY="8" markerWidth="12" markerHeight="12" orient="auto-start-reverse">
+      <path d="M 1 1 L 15 8 L 1 15 z" fill="#334155"/>
+    </marker>
+    <style>
+      .title { font: 800 56px -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif; fill: #0f172a; letter-spacing: 0; }
+      .subtitle { font: 500 24px -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif; fill: #475569; }
+      .stageTitle { font: 800 34px -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif; fill: white; }
+      .stageSub { font: 600 20px -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif; fill: rgba(255,255,255,.94); }
+      .small { font: 600 17px -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif; fill: #334155; }
+      .caption { font: 700 20px -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif; fill: #0f172a; }
+      .tiny { font: 600 15px -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif; fill: #475569; }
+      .mono { font: 700 17px "SFMono-Regular", Consolas, monospace; fill: #0f172a; }
+    </style>
+  </defs>
+
+  <rect width="1440" height="760" rx="0" fill="url(#bg)"/>
+  <ellipse cx="710" cy="362" rx="520" ry="246" fill="#67e8f9" opacity=".18" filter="url(#soft)">
+      <animate attributeName="opacity" values=".38;.75;.38" dur="3.2s" repeatCount="indefinite"/>
+    </ellipse>
+  <ellipse cx="1038" cy="218" rx="250" ry="120" fill="#fed7aa" opacity=".24" filter="url(#soft)"/>
+
+  <text x="720" y="74" text-anchor="middle" class="title">ClinTrialDataFlow</text>
+  <text x="720" y="112" text-anchor="middle" class="subtitle">Oncology clinical-trial data flow for biostatistics education</text>
+
+  <g transform="translate(96 190)">
+    <rect width="260" height="320" rx="26" fill="white" filter="url(#shadow)"/>
+    <rect width="260" height="116" rx="26" fill="url(#edc)"/>
+    <text x="130" y="46" text-anchor="middle" class="stageTitle">EDC / Raw</text>
+    <text x="130" y="80" text-anchor="middle" class="stageSub">captured observations</text>
+    <g transform="translate(42 145)">
+      <rect x="0" y="0" width="176" height="118" rx="12" fill="#f8fafc" stroke="#cbd5e1" stroke-width="2"/>
+      <line x1="22" y1="31" x2="154" y2="31" stroke="#0f766e" stroke-width="6" stroke-linecap="round"/>
+      <line x1="22" y1="59" x2="132" y2="59" stroke="#94a3b8" stroke-width="6" stroke-linecap="round"/>
+      <line x1="22" y1="87" x2="146" y2="87" stroke="#94a3b8" stroke-width="6" stroke-linecap="round"/>
+      <circle cx="151" cy="88" r="12" fill="#f97316"/>
+    </g>
+    <text x="130" y="296" text-anchor="middle" class="mono">DM AE LB TU RS</text>
+  </g>
+
+  <g transform="translate(430 190)">
+    <rect width="260" height="320" rx="26" fill="white" filter="url(#shadow)"/>
+    <rect width="260" height="116" rx="26" fill="url(#sdtm)"/>
+    <text x="130" y="46" text-anchor="middle" class="stageTitle">SDTM-style</text>
+    <text x="130" y="80" text-anchor="middle" class="stageSub">standardized domains</text>
+    <g transform="translate(40 144)">
+      <rect x="0" y="0" width="180" height="126" rx="14" fill="#eff6ff" stroke="#bfdbfe" stroke-width="2"/>
+      <line x1="0" y1="42" x2="180" y2="42" stroke="#bfdbfe" stroke-width="2"/>
+      <line x1="0" y1="84" x2="180" y2="84" stroke="#bfdbfe" stroke-width="2"/>
+      <line x1="60" y1="0" x2="60" y2="126" stroke="#bfdbfe" stroke-width="2"/>
+      <line x1="120" y1="0" x2="120" y2="126" stroke="#bfdbfe" stroke-width="2"/>
+      <circle cx="32" cy="22" r="10" fill="#0ea5e9"/>
+      <circle cx="92" cy="64" r="10" fill="#2563eb"/>
+      <circle cx="151" cy="106" r="10" fill="#f59e0b"/>
+    </g>
+    <text x="130" y="296" text-anchor="middle" class="mono">USUBJID -- VISIT -- TEST</text>
+  </g>
+
+  <g transform="translate(764 190)">
+    <rect width="260" height="320" rx="26" fill="white" filter="url(#shadow)"/>
+    <rect width="260" height="116" rx="26" fill="url(#adam)"/>
+    <text x="130" y="46" text-anchor="middle" class="stageTitle">ADaM-style</text>
+    <text x="130" y="80" text-anchor="middle" class="stageSub">analysis derivations</text>
+    <g transform="translate(40 144)">
+      <path d="M20 104 C54 22, 92 36, 114 72 S160 104, 176 28" fill="none" stroke="#7c3aed" stroke-width="9" stroke-linecap="round"/>
+      <circle cx="20" cy="104" r="10" fill="#7c3aed"/>
+      <circle cx="114" cy="72" r="10" fill="#f97316"/>
+      <circle cx="176" cy="28" r="10" fill="#0891b2"/>
+      <rect x="24" y="12" width="128" height="34" rx="17" fill="#f5f3ff" stroke="#c4b5fd" stroke-width="2"/>
+      <text x="88" y="35" text-anchor="middle" class="caption" font-size="18">derive</text>
+    </g>
+    <text x="130" y="296" text-anchor="middle" class="mono">ADSL ADRS ADTTE</text>
+  </g>
+
+  <g transform="translate(1098 190)">
+    <rect width="260" height="320" rx="26" fill="white" filter="url(#shadow)"/>
+    <rect width="260" height="116" rx="26" fill="url(#tfl)"/>
+    <text x="130" y="46" text-anchor="middle" class="stageTitle">TFL</text>
+    <text x="130" y="80" text-anchor="middle" class="stageSub">evidence outputs</text>
+    <g transform="translate(45 144)">
+      <rect x="0" y="74" width="30" height="52" rx="7" fill="#0f766e"/>
+      <rect x="48" y="42" width="30" height="84" rx="7" fill="#2563eb"/>
+      <rect x="96" y="18" width="30" height="108" rx="7" fill="#7c3aed"/>
+      <path d="M8 30 C48 4, 88 64, 140 20" fill="none" stroke="#f97316" stroke-width="7" stroke-linecap="round"/>
+      <circle cx="140" cy="20" r="11" fill="#f59e0b"/>
+    </g>
+    <text x="130" y="296" text-anchor="middle" class="mono">ORR PFS OS AE</text>
+  </g>
+
+  <g transform="translate(366 350)">
+    <line x1="0" y1="0" x2="54" y2="0" stroke="#334155" stroke-width="4" marker-end="url(#arrow)" stroke-linecap="round">
+      <animate attributeName="stroke-opacity" values=".28;.9;.28" dur="2.4s" repeatCount="indefinite"/>
+      <animate attributeName="stroke-width" values="2;4;2" dur="2.4s" repeatCount="indefinite"/>
+    </line>
+    
+      <circle r="7" fill="#ffffff" stroke="#0f766e" stroke-width="3">
+        <animateMotion dur="3.4s" repeatCount="indefinite" path="M 0 0 L 58 0" />
+        <animate attributeName="opacity" values="0;1;1;0" dur="5.6s" repeatCount="indefinite" />
+      </circle>
+      <circle r="5" fill="#f59e0b">
+        <animateMotion dur="3.4s" begin=".45s" repeatCount="indefinite" path="M 0 0 L 58 0" />
+        <animate attributeName="opacity" values="0;1;1;0" dur="5.6s" begin=".7s" repeatCount="indefinite" />
+      </circle>
+    
+  </g>
+  <g transform="translate(700 350)">
+    <line x1="0" y1="0" x2="54" y2="0" stroke="#334155" stroke-width="4" marker-end="url(#arrow)" stroke-linecap="round">
+      <animate attributeName="stroke-opacity" values=".28;.9;.28" dur="2.4s" repeatCount="indefinite"/>
+      <animate attributeName="stroke-width" values="2;4;2" dur="2.4s" repeatCount="indefinite"/>
+    </line>
+    
+      <circle r="7" fill="#ffffff" stroke="#0f766e" stroke-width="3">
+        <animateMotion dur="3.4s" repeatCount="indefinite" path="M 0 0 L 58 0" />
+        <animate attributeName="opacity" values="0;1;1;0" dur="5.6s" repeatCount="indefinite" />
+      </circle>
+      <circle r="5" fill="#f59e0b">
+        <animateMotion dur="3.4s" begin=".45s" repeatCount="indefinite" path="M 0 0 L 58 0" />
+        <animate attributeName="opacity" values="0;1;1;0" dur="5.6s" begin=".7s" repeatCount="indefinite" />
+      </circle>
+    
+  </g>
+  <g transform="translate(1034 350)">
+    <line x1="0" y1="0" x2="54" y2="0" stroke="#334155" stroke-width="4" marker-end="url(#arrow)" stroke-linecap="round">
+      <animate attributeName="stroke-opacity" values=".28;.9;.28" dur="2.4s" repeatCount="indefinite"/>
+      <animate attributeName="stroke-width" values="2;4;2" dur="2.4s" repeatCount="indefinite"/>
+    </line>
+    
+      <circle r="7" fill="#ffffff" stroke="#0f766e" stroke-width="3">
+        <animateMotion dur="3.4s" repeatCount="indefinite" path="M 0 0 L 58 0" />
+        <animate attributeName="opacity" values="0;1;1;0" dur="5.6s" repeatCount="indefinite" />
+      </circle>
+      <circle r="5" fill="#f59e0b">
+        <animateMotion dur="3.4s" begin=".45s" repeatCount="indefinite" path="M 0 0 L 58 0" />
+        <animate attributeName="opacity" values="0;1;1;0" dur="5.6s" begin=".7s" repeatCount="indefinite" />
+      </circle>
+    
+  </g>
+
+  <g transform="translate(180 570)">
+    <rect width="1080" height="78" rx="22" fill="#ffffff" opacity=".92" stroke="#cbd5e1" stroke-width="2"/>
+    <text x="42" y="32" class="caption">Teaching loop</text>
+    <text x="42" y="58" class="tiny">Students trace oncology records from source capture to auditable evidence.</text>
+    <g transform="translate(730 20)">
+      <rect x="0" y="0" width="300" height="38" rx="19" fill="#ecfeff" stroke="#67e8f9" stroke-width="2"/>
+      <text x="150" y="26" text-anchor="middle" class="small">raw -> SDTM -> ADaM -> TFL</text>
+    </g>
+  </g>
+</svg>

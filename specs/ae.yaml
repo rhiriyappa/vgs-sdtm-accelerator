@@ -1,0 +1,19 @@
+# SDTM mapping specification: AE (Adverse Events) -- Events class domain.
+domain: AE
+structure: one_record_per_event_per_subject
+raw_dataset: ae_raw.csv
+key_vars: [USUBJID, AEDECOD, AESTDTC]
+variables:
+  - { var: STUDYID,  method: assign,         from: STUDYID }
+  - { var: DOMAIN,   method: hardcode,       value: AE }
+  - { var: USUBJID,  method: derive_usubjid, from: [STUDYID, SUBJID] }
+  - { var: AESEQ,    method: derive_seq,     by: USUBJID }
+  - { var: AETERM,   method: assign,         from: AETERM }
+  - { var: AEDECOD,  method: assign,         from: AEDECOD }   # blank -> MedDRA/HITL
+  - { var: AEPTCD,   method: assign,         from: AEPTCD }
+  - { var: AESTDTC,  method: iso_date,       from: AESTDAT }
+  - { var: AEENDTC,  method: iso_date,       from: AEENDAT }
+  - { var: AESEV,    method: assign_ct,      from: AESEV, codelist: AESEV }
+  - { var: AESER,    method: assign_ct,      from: AESER, codelist: NY }
+  - { var: AEREL,    method: assign,         from: AEREL }
+  - { var: AEOUT,    method: assign_ct,      from: AEOUT, codelist: OUT }

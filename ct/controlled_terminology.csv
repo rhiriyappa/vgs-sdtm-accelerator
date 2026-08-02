@@ -1,0 +1,55 @@
+codelist,submission_value,decode,synonyms
+SEX,M,Male,Male|M|1
+SEX,F,Female,Female|F|2
+SEX,U,Unknown,Unknown|U
+SEX,UNDIFFERENTIATED,Undifferentiated,
+RACE,WHITE,White,White
+RACE,BLACK OR AFRICAN AMERICAN,Black or African American,Black or African American|Black
+RACE,ASIAN,Asian,Asian
+RACE,AMERICAN INDIAN OR ALASKA NATIVE,American Indian or Alaska Native,American Indian or Alaska Native
+RACE,NATIVE HAWAIIAN OR OTHER PACIFIC ISLANDER,Native Hawaiian or Other Pacific Islander,Native Hawaiian or Other Pacific Islander
+RACE,UNKNOWN,Unknown,Unknown|
+RACE,MULTIPLE,Multiple,Multiple
+ETHNIC,HISPANIC OR LATINO,Hispanic or Latino,Hispanic or Latino
+ETHNIC,NOT HISPANIC OR LATINO,Not Hispanic or Latino,Not Hispanic or Latino
+ETHNIC,NOT REPORTED,Not Reported,Not Reported
+ETHNIC,UNKNOWN,Unknown,Unknown
+NY,Y,Yes,Y|Yes|YES
+NY,N,No,N|No|NO
+AESEV,MILD,Mild,Mild
+AESEV,MODERATE,Moderate,Moderate
+AESEV,SEVERE,Severe,Severe
+AEREL,RELATED,Related,Related
+AEREL,NOT RELATED,Not Related,Not Related
+AEREL,POSSIBLY RELATED,Possibly Related,Possibly Related
+OUT,RECOVERED/RESOLVED,Recovered/Resolved,Recovered/Resolved
+OUT,RECOVERING/RESOLVING,Recovering/Resolving,Recovering/Resolving
+OUT,NOT RECOVERED/NOT RESOLVED,Not Recovered/Not Resolved,Not Recovered/Not Resolved
+VSTESTCD,SYSBP,Systolic Blood Pressure,SYSBP
+VSTESTCD,DIABP,Diastolic Blood Pressure,DIABP
+VSTESTCD,PULSE,Pulse Rate,PULSE
+VSTESTCD,TEMP,Temperature,TEMP
+VSTESTCD,HEIGHT,Height,HEIGHT
+VSTESTCD,WEIGHT,Weight,WEIGHT
+LBTESTCD,WBC,Leukocytes,WBC
+LBTESTCD,HGB,Hemoglobin,HGB
+LBTESTCD,PLAT,Platelets,PLAT
+LBTESTCD,ALT,Alanine Aminotransferase,ALT
+LBTESTCD,AST,Aspartate Aminotransferase,AST
+LBTESTCD,CREAT,Creatinine,CREAT
+LBTESTCD,GLUC,Glucose,GLUC
+NRIND,NORMAL,Normal,NORMAL
+NRIND,HIGH,High,HIGH
+NRIND,LOW,Low,LOW
+ROUTE,ORAL,Oral,ORAL|Oral|PO
+ROUTE,INTRAVENOUS,Intravenous,INTRAVENOUS|IV
+ROUTE,SUBCUTANEOUS,Subcutaneous,SUBCUTANEOUS|SC
+ROUTE,TOPICAL,Topical,TOPICAL
+ROUTE,INTRAMUSCULAR,Intramuscular,INTRAMUSCULAR|IM
+UNIT,10^9/L,10^9 cells per liter,10^9/L
+UNIT,g/dL,Grams per deciliter,g/dL
+UNIT,U/L,Units per liter,U/L
+UNIT,umol/L,Micromoles per liter,umol/L
+UNIT,mmol/L,Millimoles per liter,mmol/L
+UNIT,mg,Milligram,mg
+UNIT,mL,Milliliter,mL

@@ -1,0 +1,32 @@
+issue_id,rule_id,category,severity,domain,variable,usubjid,seq,value,message,source
+ISS-5135D6240C,VGS0050,Logic,ERROR,AE,AESTDTC/AEENDTC,VGS-DEMO-101-0021,1,,AESTDTC (2025-05-22) is after AEENDTC (2025-05-02).,builtin
+ISS-5DF205A9D2,VGS0050,Logic,ERROR,AE,AESTDTC/AEENDTC,VGS-DEMO-101-0021,2,,AESTDTC (2025-03-19) is after AEENDTC (2025-03-15).,builtin
+ISS-58550448EA,VGS0060,Coding,WARNING,AE,AEDECOD,VGS-DEMO-101-0002,1,Headache,AETERM 'Headache' not MedDRA-coded; requires medical coder / statistician review.,builtin
+ISS-989727F997,VGS0060,Coding,WARNING,AE,AEDECOD,VGS-DEMO-101-0002,2,Headache,AETERM 'Headache' not MedDRA-coded; requires medical coder / statistician review.,builtin
+ISS-E6D81DA9E8,VGS0060,Coding,WARNING,AE,AEDECOD,VGS-DEMO-101-0005,1,Insomnia,AETERM 'Insomnia' not MedDRA-coded; requires medical coder / statistician review.,builtin
+ISS-D4037EEF06,VGS0060,Coding,WARNING,AE,AEDECOD,VGS-DEMO-101-0013,1,Insomnia,AETERM 'Insomnia' not MedDRA-coded; requires medical coder / statistician review.,builtin
+ISS-633F389303,VGS0060,Coding,WARNING,AE,AEDECOD,VGS-DEMO-101-0016,1,Dizziness,AETERM 'Dizziness' not MedDRA-coded; requires medical coder / statistician review.,builtin
+ISS-E6250B7AE2,VGS0060,Coding,WARNING,AE,AEDECOD,VGS-DEMO-101-0017,1,Insomnia,AETERM 'Insomnia' not MedDRA-coded; requires medical coder / statistician review.,builtin
+ISS-FE42DD0C51,VGS0060,Coding,WARNING,AE,AEDECOD,VGS-DEMO-101-0024,1,Nausea,AETERM 'Nausea' not MedDRA-coded; requires medical coder / statistician review.,builtin
+ISS-72BAA8EA4E,VGS0060,Coding,WARNING,AE,AEDECOD,VGS-DEMO-101-0025,1,Vomiting,AETERM 'Vomiting' not MedDRA-coded; requires medical coder / statistician review.,builtin
+ISS-03F3B0D54B,VGS0060,Coding,WARNING,AE,AEDECOD,VGS-DEMO-101-0026,1,Headache,AETERM 'Headache' not MedDRA-coded; requires medical coder / statistician review.,builtin
+ISS-5490EAC61D,VGS0060,Coding,WARNING,AE,AEDECOD,VGS-DEMO-101-0027,1,Headache,AETERM 'Headache' not MedDRA-coded; requires medical coder / statistician review.,builtin
+ISS-2D727810D1,VGS0060,Coding,WARNING,AE,AEDECOD,VGS-DEMO-101-0027,2,Headache,AETERM 'Headache' not MedDRA-coded; requires medical coder / statistician review.,builtin
+ISS-B15C6F3D14,VGS0060,Coding,WARNING,AE,AEDECOD,VGS-DEMO-101-0031,1,Dizziness,AETERM 'Dizziness' not MedDRA-coded; requires medical coder / statistician review.,builtin
+ISS-913AE63A7F,VGS0060,Coding,WARNING,AE,AEDECOD,VGS-DEMO-101-0034,1,Nausea,AETERM 'Nausea' not MedDRA-coded; requires medical coder / statistician review.,builtin
+ISS-7E434AF0D3,VGS0060,Coding,WARNING,AE,AEDECOD,VGS-DEMO-101-0038,1,Dizziness,AETERM 'Dizziness' not MedDRA-coded; requires medical coder / statistician review.,builtin
+ISS-7BF6268CF6,VGS0060,Coding,WARNING,AE,AEDECOD,VGS-DEMO-101-0040,1,Headache,AETERM 'Headache' not MedDRA-coded; requires medical coder / statistician review.,builtin
+ISS-5BAC43F9E3,VGS0060,Coding,WARNING,AE,AEDECOD,VGS-DEMO-101-0040,2,Diarrhoea,AETERM 'Diarrhoea' not MedDRA-coded; requires medical coder / statistician review.,builtin
+ISS-B4D834A5F4,VGS0060,Coding,WARNING,AE,AEDECOD,VGS-DEMO-101-0041,1,Nausea,AETERM 'Nausea' not MedDRA-coded; requires medical coder / statistician review.,builtin
+ISS-64762A2255,VGS0060,Coding,WARNING,AE,AEDECOD,VGS-DEMO-101-0041,2,Diarrhoea,AETERM 'Diarrhoea' not MedDRA-coded; requires medical coder / statistician review.,builtin
+ISS-5C8A9F1CB6,VGS0070,Range,WARNING,VS,VSORRES,VGS-DEMO-101-0033,15,400.0,"SYSBP=400.0 outside plausible range [60,260]; requires clinical review / source verification.",builtin
+ISS-20CE04B19A,VGS0071,Range,WARNING,LB,LBSTRESN,VGS-DEMO-101-0015,2,999.0,"ALT=999.0 is a critical value vs reference [7.0,56.0]; requires clinical review.",builtin
+ISS-A7C06AC751,VGS0061,Coding,WARNING,CM,CMDECOD,VGS-DEMO-101-0006,1,Amoxicillin,CMTRT 'Amoxicillin' not WHODrug-coded; requires drug coder review.,builtin
+ISS-58BF8FBF22,VGS0061,Coding,WARNING,CM,CMDECOD,VGS-DEMO-101-0011,1,Paracetamol,CMTRT 'Paracetamol' not WHODrug-coded; requires drug coder review.,builtin
+ISS-4E6119C32E,VGS0061,Coding,WARNING,CM,CMDECOD,VGS-DEMO-101-0012,1,Amoxicillin,CMTRT 'Amoxicillin' not WHODrug-coded; requires drug coder review.,builtin
+ISS-A0340967FF,VGS0061,Coding,WARNING,CM,CMDECOD,VGS-DEMO-101-0012,2,Paracetamol,CMTRT 'Paracetamol' not WHODrug-coded; requires drug coder review.,builtin
+ISS-466718D8F8,VGS0061,Coding,WARNING,CM,CMDECOD,VGS-DEMO-101-0013,3,Paracetamol,CMTRT 'Paracetamol' not WHODrug-coded; requires drug coder review.,builtin
+ISS-90A4E2C4D8,VGS0061,Coding,WARNING,CM,CMDECOD,VGS-DEMO-101-0015,1,Ibuprofen,CMTRT 'Ibuprofen' not WHODrug-coded; requires drug coder review.,builtin
+ISS-1AA577EE60,VGS0061,Coding,WARNING,CM,CMDECOD,VGS-DEMO-101-0018,1,Ibuprofen,CMTRT 'Ibuprofen' not WHODrug-coded; requires drug coder review.,builtin
+ISS-48CA0858DD,VGS0061,Coding,WARNING,CM,CMDECOD,VGS-DEMO-101-0034,1,Paracetamol,CMTRT 'Paracetamol' not WHODrug-coded; requires drug coder review.,builtin
+ISS-A2DA4BF6F7,VGS0061,Coding,WARNING,CM,CMDECOD,VGS-DEMO-101-0048,2,Ibuprofen,CMTRT 'Ibuprofen' not WHODrug-coded; requires drug coder review.,builtin

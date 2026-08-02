@@ -1,0 +1,410 @@
+{
+  "study": {
+    "studyid": "VGS-DEMO-101",
+    "sponsor": "VGS (demo)",
+    "sdtm_version": "SDTMIG 3.4",
+    "ct_version": "CDISC CT 2024-12-13 (subset)",
+    "domains": [
+      "DM",
+      "AE",
+      "VS",
+      "LB",
+      "CM"
+    ]
+  },
+  "gate_status": {
+    "submission_ready": true,
+    "open_errors": [],
+    "open_warnings": [],
+    "missing_signatures": [],
+    "audit_chain_ok": true,
+    "audit_chain_msg": "Audit chain intact.",
+    "signatures_applied": [
+      "mapping_review",
+      "validation_gate",
+      "submission_release"
+    ]
+  },
+  "governance_metrics": {
+    "domain_accuracy": {
+      "DM": 1.0,
+      "AE": 1.0,
+      "VS": 1.0,
+      "LB": 1.0,
+      "CM": 1.0
+    },
+    "qc_parity": {
+      "DM": 1.0,
+      "AE": 1.0,
+      "VS": 1.0,
+      "LB": 1.0,
+      "CM": 1.0
+    },
+    "metrics_pass": {
+      "domain_accuracy": true,
+      "qc_parity": true
+    }
+  },
+  "dispositions": {
+    "ISS-5135D6240C": {
+      "severity": "ERROR",
+      "action": "corrected",
+      "reviewer": "A. Rao",
+      "role": "Data Mgmt & Solutions",
+      "comment": "Query DQ-0021: AE start/end dates transposed in EDC; corrected at source and re-verified.",
+      "resolves": true,
+      "correction": {
+        "raw_dataset": "ae_raw.csv",
+        "filter": {
+          "SUBJID": "0021"
+        },
+        "changes": [
+          {
+            "rows": 2,
+            "swapped": [
+              "AESTDAT",
+              "AEENDAT"
+            ]
+          }
+        ]
+      }
+    },
+    "ISS-5DF205A9D2": {
+      "severity": "ERROR",
+      "action": "corrected",
+      "reviewer": "A. Rao",
+      "role": "Data Mgmt & Solutions",
+      "comment": "Query DQ-0021: AE start/end dates transposed in EDC; corrected at source and re-verified.",
+      "resolves": true,
+      "correction": {
+        "raw_dataset": "ae_raw.csv",
+        "filter": {
+          "SUBJID": "0021"
+        },
+        "changes": [
+          {
+            "rows": 0,
+            "swapped": [
+              "AESTDAT",
+              "AEENDAT"
+            ]
+          }
+        ]
+      }
+    },
+    "ISS-58550448EA": {
+      "severity": "WARNING",
+      "action": "coded",
+      "reviewer": "Dr. L. Chen",
+      "role": "CDISC / Biostat SME",
+      "comment": "MedDRA term assigned for 'Headache' by coder.",
+      "resolves": true
+    },
+    "ISS-989727F997": {
+      "severity": "WARNING",
+      "action": "coded",
+      "reviewer": "Dr. L. Chen",
+      "role": "CDISC / Biostat SME",
+      "comment": "MedDRA term assigned for 'Headache' by coder.",
+      "resolves": true
+    },
+    "ISS-E6D81DA9E8": {
+      "severity": "WARNING",
+      "action": "coded",
+      "reviewer": "Dr. L. Chen",
+      "role": "CDISC / Biostat SME",
+      "comment": "MedDRA term assigned for 'Insomnia' by coder.",
+      "resolves": true
+    },
+    "ISS-D4037EEF06": {
+      "severity": "WARNING",
+      "action": "coded",
+      "reviewer": "Dr. L. Chen",
+      "role": "CDISC / Biostat SME",
+      "comment": "MedDRA term assigned for 'Insomnia' by coder.",
+      "resolves": true
+    },
+    "ISS-633F389303": {
+      "severity": "WARNING",
+      "action": "coded",
+      "reviewer": "Dr. L. Chen",
+      "role": "CDISC / Biostat SME",
+      "comment": "MedDRA term assigned for 'Dizziness' by coder.",
+      "resolves": true
+    },
+    "ISS-E6250B7AE2": {
+      "severity": "WARNING",
+      "action": "coded",
+      "reviewer": "Dr. L. Chen",
+      "role": "CDISC / Biostat SME",
+      "comment": "MedDRA term assigned for 'Insomnia' by coder.",
+      "resolves": true
+    },
+    "ISS-FE42DD0C51": {
+      "severity": "WARNING",
+      "action": "coded",
+      "reviewer": "Dr. L. Chen",
+      "role": "CDISC / Biostat SME",
+      "comment": "MedDRA term assigned for 'Nausea' by coder.",
+      "resolves": true
+    },
+    "ISS-72BAA8EA4E": {
+      "severity": "WARNING",
+      "action": "coded",
+      "reviewer": "Dr. L. Chen",
+      "role": "CDISC / Biostat SME",
+      "comment": "MedDRA term assigned for 'Vomiting' by coder.",
+      "resolves": true
+    },
+    "ISS-03F3B0D54B": {
+      "severity": "WARNING",
+      "action": "coded",
+      "reviewer": "Dr. L. Chen",
+      "role": "CDISC / Biostat SME",
+      "comment": "MedDRA term assigned for 'Headache' by coder.",
+      "resolves": true
+    },
+    "ISS-5490EAC61D": {
+      "severity": "WARNING",
+      "action": "coded",
+      "reviewer": "Dr. L. Chen",
+      "role": "CDISC / Biostat SME",
+      "comment": "MedDRA term assigned for 'Headache' by coder.",
+      "resolves": true
+    },
+    "ISS-2D727810D1": {
+      "severity": "WARNING",
+      "action": "coded",
+      "reviewer": "Dr. L. Chen",
+      "role": "CDISC / Biostat SME",
+      "comment": "MedDRA term assigned for 'Headache' by coder.",
+      "resolves": true
+    },
+    "ISS-B15C6F3D14": {
+      "severity": "WARNING",
+      "action": "coded",
+      "reviewer": "Dr. L. Chen",
+      "role": "CDISC / Biostat SME",
+      "comment": "MedDRA term assigned for 'Dizziness' by coder.",
+      "resolves": true
+    },
+    "ISS-913AE63A7F": {
+      "severity": "WARNING",
+      "action": "coded",
+      "reviewer": "Dr. L. Chen",
+      "role": "CDISC / Biostat SME",
+      "comment": "MedDRA term assigned for 'Nausea' by coder.",
+      "resolves": true
+    },
+    "ISS-7E434AF0D3": {
+      "severity": "WARNING",
+      "action": "coded",
+      "reviewer": "Dr. L. Chen",
+      "role": "CDISC / Biostat SME",
+      "comment": "MedDRA term assigned for 'Dizziness' by coder.",
+      "resolves": true
+    },
+    "ISS-7BF6268CF6": {
+      "severity": "WARNING",
+      "action": "coded",
+      "reviewer": "Dr. L. Chen",
+      "role": "CDISC / Biostat SME",
+      "comment": "MedDRA term assigned for 'Headache' by coder.",
+      "resolves": true
+    },
+    "ISS-5BAC43F9E3": {
+      "severity": "WARNING",
+      "action": "coded",
+      "reviewer": "Dr. L. Chen",
+      "role": "CDISC / Biostat SME",
+      "comment": "MedDRA term assigned for 'Diarrhoea' by coder.",
+      "resolves": true
+    },
+    "ISS-B4D834A5F4": {
+      "severity": "WARNING",
+      "action": "coded",
+      "reviewer": "Dr. L. Chen",
+      "role": "CDISC / Biostat SME",
+      "comment": "MedDRA term assigned for 'Nausea' by coder.",
+      "resolves": true
+    },
+    "ISS-64762A2255": {
+      "severity": "WARNING",
+      "action": "coded",
+      "reviewer": "Dr. L. Chen",
+      "role": "CDISC / Biostat SME",
+      "comment": "MedDRA term assigned for 'Diarrhoea' by coder.",
+      "resolves": true
+    },
+    "ISS-5C8A9F1CB6": {
+      "severity": "WARNING",
+      "action": "query_raised",
+      "reviewer": "Dr. L. Chen",
+      "role": "CDISC / Biostat SME",
+      "comment": "Value 400.0 flagged; site query raised pending source verification.",
+      "resolves": true
+    },
+    "ISS-20CE04B19A": {
+      "severity": "WARNING",
+      "action": "query_raised",
+      "reviewer": "Dr. L. Chen",
+      "role": "CDISC / Biostat SME",
+      "comment": "Value 999.0 flagged; site query raised pending source verification.",
+      "resolves": true
+    },
+    "ISS-A7C06AC751": {
+      "severity": "WARNING",
+      "action": "coded",
+      "reviewer": "Dr. L. Chen",
+      "role": "CDISC / Biostat SME",
+      "comment": "WHODrug term assigned for 'Amoxicillin' by coder.",
+      "resolves": true
+    },
+    "ISS-58BF8FBF22": {
+      "severity": "WARNING",
+      "action": "coded",
+      "reviewer": "Dr. L. Chen",
+      "role": "CDISC / Biostat SME",
+      "comment": "WHODrug term assigned for 'Paracetamol' by coder.",
+      "resolves": true
+    },
+    "ISS-4E6119C32E": {
+      "severity": "WARNING",
+      "action": "coded",
+      "reviewer": "Dr. L. Chen",
+      "role": "CDISC / Biostat SME",
+      "comment": "WHODrug term assigned for 'Amoxicillin' by coder.",
+      "resolves": true
+    },
+    "ISS-A0340967FF": {
+      "severity": "WARNING",
+      "action": "coded",
+      "reviewer": "Dr. L. Chen",
+      "role": "CDISC / Biostat SME",
+      "comment": "WHODrug term assigned for 'Paracetamol' by coder.",
+      "resolves": true
+    },
+    "ISS-466718D8F8": {
+      "severity": "WARNING",
+      "action": "coded",
+      "reviewer": "Dr. L. Chen",
+      "role": "CDISC / Biostat SME",
+      "comment": "WHODrug term assigned for 'Paracetamol' by coder.",
+      "resolves": true
+    },
+    "ISS-90A4E2C4D8": {
+      "severity": "WARNING",
+      "action": "coded",
+      "reviewer": "Dr. L. Chen",
+      "role": "CDISC / Biostat SME",
+      "comment": "WHODrug term assigned for 'Ibuprofen' by coder.",
+      "resolves": true
+    },
+    "ISS-1AA577EE60": {
+      "severity": "WARNING",
+      "action": "coded",
+      "reviewer": "Dr. L. Chen",
+      "role": "CDISC / Biostat SME",
+      "comment": "WHODrug term assigned for 'Ibuprofen' by coder.",
+      "resolves": true
+    },
+    "ISS-48CA0858DD": {
+      "severity": "WARNING",
+      "action": "coded",
+      "reviewer": "Dr. L. Chen",
+      "role": "CDISC / Biostat SME",
+      "comment": "WHODrug term assigned for 'Paracetamol' by coder.",
+      "resolves": true
+    },
+    "ISS-A2DA4BF6F7": {
+      "severity": "WARNING",
+      "action": "coded",
+      "reviewer": "Dr. L. Chen",
+      "role": "CDISC / Biostat SME",
+      "comment": "WHODrug term assigned for 'Ibuprofen' by coder.",
+      "resolves": true
+    }
+  },
+  "corrections": [
+    {
+      "raw_dataset": "ae_raw.csv",
+      "filter": {
+        "SUBJID": "0021"
+      },
+      "changes": [
+        {
+          "rows": 2,
+          "swapped": [
+            "AESTDAT",
+            "AEENDAT"
+          ]
+        }
+      ],
+      "reviewer": "A. Rao"
+    },
+    {
+      "raw_dataset": "ae_raw.csv",
+      "filter": {
+        "SUBJID": "0021"
+      },
+      "changes": [
+        {
+          "rows": 0,
+          "swapped": [
+            "AESTDAT",
+            "AEENDAT"
+          ]
+        }
+      ],
+      "reviewer": "A. Rao"
+    }
+  ],
+  "signatures": {
+    "mapping_review": {
+      "reviewer": "Dr. L. Chen",
+      "role": "CDISC / Biostat SME",
+      "meaning": "Mapping reviewed and approved against the CRF/spec.",
+      "credential": "verified",
+      "dataset_hashes": {
+        "ae.csv": "bc03caaade2a634ef587a7fcb4a6468dba522ced199017268a72109588d0f618",
+        "cm.csv": "a49aa9783fe88c6d39d536d43fd488ece72ba73e856aa71c1554b4b84a0fde03",
+        "dm.csv": "23d2ce83fc026580fd7286479d01058e3058dfd14875e81e65e98322e0eff55a",
+        "lb.csv": "88afacdf031e88ea5525a92865672b619b913eee84975d0f2e32cc1b711aedc0",
+        "vs.csv": "0c14b15728ba678f9977c5c500238b8e2f3e3ec647d64cdb798028d27f7e39a8"
+      },
+      "utc": "2026-08-01T00:48:25.844180+00:00",
+      "entry_hash": "f3fa751786663366a98713b6da2e3402d5086069c9e7b573416c4acc145c9ff4"
+    },
+    "validation_gate": {
+      "reviewer": "M. Okafor",
+      "role": "Validation / QA Engineer",
+      "meaning": "Conformance validation reviewed; gate criteria met.",
+      "credential": "verified",
+      "dataset_hashes": {
+        "ae.csv": "bc03caaade2a634ef587a7fcb4a6468dba522ced199017268a72109588d0f618",
+        "cm.csv": "a49aa9783fe88c6d39d536d43fd488ece72ba73e856aa71c1554b4b84a0fde03",
+        "dm.csv": "23d2ce83fc026580fd7286479d01058e3058dfd14875e81e65e98322e0eff55a",
+        "lb.csv": "88afacdf031e88ea5525a92865672b619b913eee84975d0f2e32cc1b711aedc0",
+        "vs.csv": "0c14b15728ba678f9977c5c500238b8e2f3e3ec647d64cdb798028d27f7e39a8"
+      },
+      "utc": "2026-08-01T00:48:25.845228+00:00",
+      "entry_hash": "53ab10c87da77ec06d651ea198998ad61707c60efcde8645e6e3d6cc0de8f619"
+    },
+    "submission_release": {
+      "reviewer": "Dr. P. Ellsworth",
+      "role": "Qualified Statistician",
+      "meaning": "Datasets approved for submission-grade release.",
+      "credential": "verified",
+      "dataset_hashes": {
+        "ae.csv": "bc03caaade2a634ef587a7fcb4a6468dba522ced199017268a72109588d0f618",
+        "cm.csv": "a49aa9783fe88c6d39d536d43fd488ece72ba73e856aa71c1554b4b84a0fde03",
+        "dm.csv": "23d2ce83fc026580fd7286479d01058e3058dfd14875e81e65e98322e0eff55a",
+        "lb.csv": "88afacdf031e88ea5525a92865672b619b913eee84975d0f2e32cc1b711aedc0",
+        "vs.csv": "0c14b15728ba678f9977c5c500238b8e2f3e3ec647d64cdb798028d27f7e39a8"
+      },
+      "utc": "2026-08-01T00:48:25.846046+00:00",
+      "entry_hash": "5f4ec46493104d4817968f2eca2d0c8c04d4525cbde71b5e870c482194a33c4d"
+    }
+  },
+  "audit_entries": 36
+}

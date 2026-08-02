@@ -1,0 +1,38 @@
+{
+  "report_metadata": {
+    "engine": "cdisc-rules-engine",
+    "standard": "sdtmig",
+    "version": "3.4",
+    "note": "Illustrative CDISC CORE-style output for offline adapter testing."
+  },
+  "results": [
+    {
+      "core_id": "CORE-000252",
+      "severity": "Error",
+      "domains": ["AE"],
+      "variables": ["AESTDTC", "AEENDTC"],
+      "message": "AE start date (AESTDTC) is after AE end date (AEENDTC).",
+      "errors": [
+        {"USUBJID": "VGS-DEMO-101-0021", "value": "2025-05-22", "row": 21}
+      ]
+    },
+    {
+      "core_id": "CORE-000118",
+      "severity": "Warning",
+      "domains": ["LB"],
+      "variables": ["LBSTRESN"],
+      "message": "LBSTRESN is a potential outlier relative to reference range.",
+      "errors": [
+        {"USUBJID": "VGS-DEMO-101-0015", "value": "999", "row": 44}
+      ]
+    },
+    {
+      "core_id": "CORE-000037",
+      "severity": "Warning",
+      "domains": ["DM"],
+      "variables": ["ARMCD"],
+      "message": "ARMCD should be consistent with the trial arms in TA.",
+      "errors": []
+    }
+  ]
+}

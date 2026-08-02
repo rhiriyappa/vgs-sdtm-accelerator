@@ -1,0 +1,18 @@
+# SDTM mapping specification: CM (Concomitant Medications) -- Interventions class.
+domain: CM
+structure: one_record_per_intervention_per_subject
+raw_dataset: cm_raw.csv
+key_vars: [USUBJID, CMTRT, CMSTDTC]
+variables:
+  - { var: STUDYID,  method: assign,         from: STUDYID }
+  - { var: DOMAIN,   method: hardcode,       value: CM }
+  - { var: USUBJID,  method: derive_usubjid, from: [STUDYID, SUBJID] }
+  - { var: CMSEQ,    method: derive_seq,     by: USUBJID }
+  - { var: CMTRT,    method: assign,         from: CMTRT }
+  - { var: CMDECOD,  method: assign,         from: CMDECOD }   # blank -> WHODrug/HITL
+  - { var: CMSTDTC,  method: iso_date,       from: CMSTDAT }
+  - { var: CMENDTC,  method: iso_date,       from: CMENDAT }
+  - { var: CMDOSE,   method: copy_numeric,   from: CMDOSE }
+  - { var: CMDOSU,   method: assign_ct,      from: CMDOSU,  codelist: UNIT }
+  - { var: CMROUTE,  method: assign_ct,      from: CMROUTE, codelist: ROUTE }
+  - { var: CMINDC,   method: assign,         from: CMINDC }
