@@ -1,2 +1,5 @@
-.venv
-*.log
+# Ignore Python compiled cache modules
+src/__pycache__
+*.pyc
+*.pyo
+*.pyd
