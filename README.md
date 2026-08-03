@@ -1,5 +1,7 @@
 # SDTM Delivery Accelerator
 
+Medium Article - https://medium.com/@rhiriyappa/from-raw-edc-to-validated-submission-architecting-an-enterprise-sdtm-accelerator-for-cros-ab08ef0353ef
+
 The pharmaceutical drug lifecycle represents the journey of bringing a novel therapeutic from initial discovery to real-world patient impact. 
 
 It begins in **Academic Research**, where foundational understanding is built through basic science, preclinical laboratory or animal testing, and the development of innovative technologies. To transition these scientific discoveries into viable therapeutics, **Translational & Collaborative Efforts** bridge the gap between academia and industry through funding, industry partnerships, and multi-phase clinical trials. Finally, the **Pharma Industry** leads the scaled drug development, manufacturing, regulatory approval, and commercialization phases—ultimately delivering new therapies to market to improve patient health outcomes.
@@ -205,3 +207,8 @@ outputs/signoff/    audit_trail.jsonl, review_state.json,
 3. Wire the review queue to real reviewer identities + SSO for Part 11 signatures.
 4. Benchmark **hours saved** vs. a **manually programmed study** (the p7 GO/NO-GO gate).
 
+
+## References
+
+CDISC Primer - https://www.cdisc.org/sites/default/files/pdf/CDISC-PHUSE-SlidesMERGED.pdf
+SDTM - https://www.cdisc.org/standards/foundational/sdtm
