@@ -211,4 +211,5 @@ outputs/signoff/    audit_trail.jsonl, review_state.json,
 ## References
 
 CDISC Primer - https://www.cdisc.org/sites/default/files/pdf/CDISC-PHUSE-SlidesMERGED.pdf
+
 SDTM - https://www.cdisc.org/standards/foundational/sdtm
